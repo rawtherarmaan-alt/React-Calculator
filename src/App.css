@@ -1,0 +1,75 @@
+.container{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.container .title{
+  text-align: center;
+}
+
+.container .title h1{
+  color: slateblue;
+  font-weight: 500;
+}
+
+.cal-container {
+border: 1px solid #ccc;
+width: 60%;
+margin: auto;
+}
+
+.display{
+  width: 100%;
+  background-color: #222;
+  padding: 1rem;
+  color: #fff;
+}
+
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(24%,1fr));
+  grid-gap: 4px;
+  padding: 1rem;
+}
+.btn{
+  padding: 6px 9px;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s all;
+}
+
+.btn:hover{
+  background-color: slateblue;
+}
+
+.display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: 400;
+}
+
+.display .out{
+  color: yellow;
+  font-size: 1.2rem;
+}
+
+@media  screen and(max-width:695px) {
+  .cal-container{
+    width: 100%;
+    margin: auto;
+  }
+
+  .keypad{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20%,1fr));
+    grid-gap: 4px;
+    padding: 1rem;
+  }
+  
+}
